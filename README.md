@@ -1,77 +1,196 @@
-# automation-requests-dashboard
+# SPFx Automation Requests Dashboard
 
-## Summary
+SharePoint Framework (SPFx) dashboard for managing automation requests stored in a SharePoint list, built with React, TypeScript, Fluent UI v9 and PnPjs.
 
-Short summary on functionality and used technologies.
-
-[picture of the solution in action, if possible]
-
-## Used SharePoint Framework Version
-
-![version](https://img.shields.io/badge/version-1.22.2-green.svg)
-
-## Applies to
-
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-## Prerequisites
-
-> Any special pre-requisites?
-
-## Solution
-
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
-
-## Version history
-
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+![version](https://img.shields.io/badge/SPFx-1.22.2-green.svg)
+![React](https://img.shields.io/badge/React-TypeScript-blue.svg)
+![FluentUI](https://img.shields.io/badge/FluentUI-v9-teal.svg)
 
 ---
 
-## Minimal Path to Awesome
+## Overview
 
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - `npm install -g @rushstack/heft`
-  - `npm install`
-  - `heft start`
+This project provides a modern SharePoint dashboard to help teams submit, track and manage business automation requests.
 
-> Include any additional steps as needed.
+Features include:
 
-Other build commands can be listed using `heft --help`.
+- Create, Edit and Delete Requests (CRUD)
+- Search Requests
+- Filter by Department, Priority and Status
+- KPI Summary Cards
+- Status Tabs
+- Request Detail View
+- Dynamic SharePoint List Configuration (Property Pane)
+- Responsive card layout
+
+---
+
+## Screenshots
+
+### Dashboard Overview
+
+![Dashboard Overview](./screenshots/dashboard-overview.png)
+
+---
+
+### Filters and KPI Cards
+
+![Filters and KPIs](./screenshots/filters-kpis.png)
+
+---
+
+### Create / Edit Request Form
+
+![Request Form](./screenshots/request-form.png)
+
+---
+
+## Tech Stack
+
+- SharePoint Framework 1.22.2
+- React
+- TypeScript
+- Fluent UI v9
+- PnPjs
+
+---
+
+## SharePoint List Structure
+
+Create a SharePoint list named:
+
+```text
+Automation Requests
+```
+
+Required columns:
+
+| Column Name       | Type |
+|------------------|------|
+| Title             | Single line text |
+| Department        | Choice |
+| RequestType       | Choice |
+| Priority          | Choice |
+| Description       | Multiple lines |
+| ExpectedBenefit   | Multiple lines |
+| Status            | Choice |
+
+Suggested Status values:
+
+```text
+New
+Pending Approval
+Approved
+Rejected
+```
+
+---
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
+### Request Management
 
-This extension illustrates the following concepts:
+- Submit new requests
+- Edit requests
+- Delete requests with confirmation
 
-- topic 1
-- topic 2
-- topic 3
+### Filtering
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+- Department filter
+- Priority filter
+- Status tabs
+- Search by title or keywords
+- Clear all filters
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+### Dashboard Metrics
 
-## References
+KPI cards display:
 
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
-- [Heft Documentation](https://heft.rushstack.io/)
+- Total Requests
+- High Priority
+- Medium Priority
+- Low Priority
+
+---
+
+## Project Structure
+
+```text
+src/
+ ├── components/
+ │   ├── AutomationRequestsDashboard.tsx
+ │   ├── NewRequestPanel.tsx
+ │   └── INewRequestPanelProps.ts
+ │
+ ├── services/
+ │   └── SharePointService.ts
+ │
+ ├── models/
+ │   ├── IRequestItem.ts
+ │   └── IRequestCreate.ts
+```
+
+---
+
+## Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Joce2326/spfx-automation-requests-dashboard.git
+cd spfx-automation-requests-dashboard
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
+
+```bash
+heft start
+```
+
+Open the hosted SharePoint workbench:
+
+```text
+https://yourtenant.sharepoint.com/_layouts/15/workbench.aspx
+```
+
+---
+
+## Future Enhancements
+
+Planned improvements:
+
+- Power Automate approval integration
+- Microsoft Graph user profile integration
+- AI request classification
+- Dashboard analytics charts
+
+---
+
+## GitHub Topics
+
+Suggested repository topics:
+
+```text
+sharepoint
+spfx
+react
+typescript
+fluentui
+pnpjs
+microsoft365
+powerplatform
+```
+
+---
+
+## Author
+
+Jocelyn Zavala Fara
+
+Microsoft 365 / SharePoint / Power Platform Specialist
