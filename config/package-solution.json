@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "automation-requests-dashboard-client-side-solution",
+    "id": "827ecc85-f587-4dbe-8511-35b37bc238d6",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "automation-requests-dashboard description"
+      },
+      "longDescription": {
+        "default": "automation-requests-dashboard description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "automation-requests-dashboard Feature",
+        "description": "The feature that activates elements of the automation-requests-dashboard solution.",
+        "id": "8eb60789-5a1c-43ad-b2d7-96dd91fb51be",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/automation-requests-dashboard.sppkg"
+  }
+}

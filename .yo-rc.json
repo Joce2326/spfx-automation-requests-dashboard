@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.14.0",
+    "sdksVersions": {},
+    "version": "1.22.2",
+    "libraryName": "automation-requests-dashboard",
+    "libraryId": "827ecc85-f587-4dbe-8511-35b37bc238d6",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "automation-requests-dashboard",
+    "solutionShortDescription": "automation-requests-dashboard description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

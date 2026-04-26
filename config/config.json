@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "automation-requests-dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/automationRequestsDashboard/AutomationRequestsDashboardWebPart.js",
+          "manifest": "./src/webparts/automationRequestsDashboard/AutomationRequestsDashboardWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AutomationRequestsDashboardWebPartStrings": "lib/webparts/automationRequestsDashboard/loc/{locale}.js"
+  }
+}
