@@ -28,22 +28,27 @@ Features include:
 ## Screenshots
 
 ### Dashboard Overview
+![Dashboard Overview](./screenshots/AutomationView.jpg)
 
-![Dashboard Overview](./screenshots/dashboard-overview.png)
+---
+
+### Search
+![Search](./screenshots/AutomationSearch.jpg)
 
 ---
 
 ### Filters and KPI Cards
+![Filters and KPI](./screenshots/AutomationFilter.jpg)
 
-![Filters and KPIs](./screenshots/filters-kpis.png)
+---
+
+### Status Filtering
+![Status Filtering](./screenshots/AutomationFilterStatus.jpg)
 
 ---
 
 ### Create / Edit Request Form
-
-![Request Form](./screenshots/request-form.png)
-
----
+![Request Form](./screenshots/AutomationNewRequest.jpg)
 
 ## Tech Stack
 
